@@ -119,7 +119,7 @@ include "identify_admin.php";
                     $address="No address proided";
                     $phoneNo="No phone number proided";
 
-                    $read_query=mysqli_query($conn,"select NIC,First_Name,Lat_Name,Sex,Email,DOB,Image_Path,Adress,Phone_number from admin where ID=$id");
+                    $read_query=mysqli_query($conn,"select NIC,First_Name,Last_Name,Sex,Email,DOB,Image_Path,Adress,Phone_number from admin where ID=$id");
                     $row=mysqli_fetch_row($read_query);
                         $nic=$row[0];
                         $fName=$row[1];

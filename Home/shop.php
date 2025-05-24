@@ -102,7 +102,7 @@
 
          include ("conn.php");
 
-           $servicequery=mysqli_query($conn,"select Name,Detailse,Image from service");
+           $servicequery=mysqli_query($conn,"select Name,Details,Image from service");
 
           
              if($servicequery)
@@ -127,7 +127,7 @@
               <?php echo $servicerow['Name']; ?>
               </h6>
               <h6>
-              <?php echo $servicerow['Detailse']; ?>
+              <?php echo $servicerow['Details']; ?>
               </h6>
             </div>
           </a>

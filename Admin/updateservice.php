@@ -65,7 +65,7 @@ include "identify_admin.php";
         }
 
         if ($newDetails){
-            $update_query=mysqli_query($conn,"update service set Detailse='$newDetails' where ID='$currentSID'");
+            $update_query=mysqli_query($conn,"update service set Details='$newDetails' where ID='$currentSID'");
             if(!$update_query){
                 echo '<div class="alert alert-danger" role="alert">
                 Could not update service details<br><br>
