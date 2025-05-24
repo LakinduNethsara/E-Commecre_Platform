@@ -30,7 +30,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `KarmikayaDB`.`Service` (
   `ID` INT NOT NULL,
   `Name` VARCHAR(45) NULL,
-  `Detailse` VARCHAR(300) NULL,
+  `Details` VARCHAR(300) NULL,
   `Image` VARCHAR(250) NULL,
   `Catogery_ID` INT NOT NULL,
   PRIMARY KEY (`ID`),
@@ -80,7 +80,7 @@ CREATE TABLE IF NOT EXISTS `KarmikayaDB`.`Admin` (
   `ID` INT NOT NULL AUTO_INCREMENT,
   `NIC` VARCHAR(45) NOT NULL,
   `First_Name` VARCHAR(45) NULL,
-  `Lat_Name` VARCHAR(45) NULL,
+  `Last_Name` VARCHAR(45) NULL,
   `Sex` VARCHAR(45) NULL,
   `Email` VARCHAR(45) NULL,
   `DOB` DATE NULL,

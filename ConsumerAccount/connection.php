@@ -1,7 +1,7 @@
 <?php
 session_start();
 // Create connection
-$conn = mysqli_connect("localhost","root","1234","KarmikayaDB");
+$conn = mysqli_connect("localhost","root","","KarmikayaDB");
 
 // Check connection
 if (!$conn) {

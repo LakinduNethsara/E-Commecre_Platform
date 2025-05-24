@@ -108,7 +108,7 @@ include "identify_admin.php";
                     <tbody>
                         <?php
                             include "Connection/connection.php";
-                            $query=mysqli_query($conn,'select service.ID,service.Name,service.Detailse,catogery.Name,service.Image from service INNER JOIN catogery on service.Catogery_ID=catogery.ID');
+                            $query=mysqli_query($conn,'select service.ID,service.Name,service.Details,catogery.Name,service.Image from service INNER JOIN catogery on service.Catogery_ID=catogery.ID');
 
                             while($row=mysqli_fetch_row($query)){
                                 echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td>
